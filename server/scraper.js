@@ -1,10 +1,8 @@
-const puppeteer = require('puppeteer');
+// const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const cheerio = require('cheerio')
 const axios = require('axios');
 const { post } = require('request');
-
-
 
 const getJobs = async () => {
 
@@ -42,7 +40,6 @@ const getJobs = async () => {
 
 getJobs().then((jobs_dict) => console.log(jobs_dict))
 
-
 function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
@@ -50,3 +47,5 @@ function sleep(milliseconds) {
       currentDate = Date.now();
     } while (currentDate - date < milliseconds);
   }
+
+module.exports = { getJobs };
