@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
+import Sidebar from "./Sidebar";
 
 function Dashboard(props) {
   const [value, onChange] = useState(new Date());
@@ -18,12 +19,13 @@ function Dashboard(props) {
   return (
     <div>
       <label htmlFor="companies">Companies</label>
-      <select name="companies" id="companies">
+      <Sidebar />
+      {/* <select name="companies" id="companies">
         <option value="amazon">Amazon</option>
         <option value="google">Google</option>
         <option value="meta">Meta</option>
         <option value="apple">Apple</option>
-      </select>
+      </select> */}
       <Calendar onChange={onChange} value={value} />
       {jobs.map((job) => (
         <div key={job.title}>

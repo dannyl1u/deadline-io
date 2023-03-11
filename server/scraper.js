@@ -5,12 +5,12 @@ const axios = require('axios');
 const { post } = require('request');
 const cron = require('node-cron');
 
-
 let jobTitles = [];
 let postingDates = [];
 let jobs_dict = {};
 
 // Cron job to scrape the website every 30 seconds
+
 const getJobs = async () => {
 	cron.schedule('*/30 * * * * *', async () => {
 		try {
