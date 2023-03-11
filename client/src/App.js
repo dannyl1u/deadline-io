@@ -1,39 +1,20 @@
-import React, { useState } from 'react';
-import Calendar from 'react-calendar'
-
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Nav from "./components/Header/Header";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
-  const [value, onChange] = useState(new Date());
-  const [jobs, setJobs] = useState([]);
-
-  fetch('/api/jobs')
-  .then(function (response) {
-      return response.json();
-  })
-  .then(function (data) {
-      console.log(data);
-      setJobs(data);
-  })
-  .catch(function (error) {
-  });
-
   return (
-    <div>
-      <label htmlFor="companies">Companies</label>
-      <select name="companies" id="companies">
-        <option value="amazon">Amazon</option>
-        <option value="google">Google</option>
-        <option value="meta">Meta</option>
-        <option value="apple">Apple</option>
-      </select>
-      <Calendar onChange={onChange} value={value} />
-      {jobs.map(job => (
-        <div key={job.title}>
-          <h3>{job.title}</h3>
-          <p>{job.company}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/dashboard" exact component={Dashboard} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
