@@ -4,8 +4,6 @@ const cheerio = require('cheerio')
 const axios = require('axios');
 const { post } = require('request');
 
-
-
 const getJobs = async () => {
 
     const jobTitles = [];
