@@ -33,7 +33,7 @@ Job.getAllJobs = (result) => {
 //get job by type
 Job.getJobByType = (type, result) => {
   dbConn.query(
-    "SELECT * FROM job WHERE type = ?",
+    "SELECT * FROM jobs WHERE type = ?",
     type,
     (err, res) => {
       if (err) {
@@ -49,7 +49,7 @@ Job.getJobByType = (type, result) => {
   // create new job
 Job.createNewJob = (jobReqData, result) => {
     dbConn.query(
-      "INSERT INTO job SET ?",
+      "INSERT INTO jobs SET ?",
       jobReqData,
       (err, res) => {
         if (err) {
@@ -65,7 +65,7 @@ Job.createNewJob = (jobReqData, result) => {
   
 //get job by ID for update
  Job.getJobByID = (id, result) => {
-    dbConn.query("SELECT * FROM job WHERE id=?", id, (err, res) => {
+    dbConn.query("SELECT * FROM jobs WHERE id=?", id, (err, res) => {
       if (err) {
         console.log("Error while fetching job by id", err);
         result(null, err);
@@ -78,7 +78,7 @@ Job.createNewJob = (jobReqData, result) => {
 //update job
  Job.updateUser = (id, jobReqData, result) => {
     dbConn.query(
-      "UPDATE admin SET title=?, description=?, type=?, date=?, status=?, priority=?, company=? WHERE id = ?",
+      "UPDATE jobs SET title=?, description=?, type=?, date=?, status=?, priority=?, company=? WHERE id = ?",
       [jobReqData.title, jobReqData.description, jobReqData.type, jobReqData.status, jobReqData.priority, jobReqData.company, id],
       (err, res) => {
         if (err) {
@@ -94,7 +94,7 @@ Job.createNewJob = (jobReqData, result) => {
   
   //delete job
 Job.deleteJob = (id, result) => {
-    dbConn.query("DELETE from job WHERE id=?", [id], (err, res) => {
+    dbConn.query("DELETE from jobs WHERE id=?", [id], (err, res) => {
       if (err) {
         console.log("Error while deleting job");
         result(null, err);
