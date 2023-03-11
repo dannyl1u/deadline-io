@@ -1,0 +1,42 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    &-img {
+        display: flex;
+
+        &__image {
+        max-width: 100%;
+        height: auto;
+        }
+    }
+    &-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+   }
+   &-list {
+    list-style: none;
+
+    &__item {
+    padding: 0.5rem 0;
+    }
+   } 
+}
+
+
