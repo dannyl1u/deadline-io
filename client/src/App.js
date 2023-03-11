@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './components/Header/Header';
 import Calendar from 'react-calendar'
 
 
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <label htmlFor="companies">Companies</label>
       <select name="companies" id="companies">
         <option value="amazon">Amazon</option>
