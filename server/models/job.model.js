@@ -33,9 +33,3 @@ const JobSchema = new Schema({
 });
 
 module.exports = Job = mongoose.model('job', JobSchema);
-
-//     // this.location = job.location;
-//     // this.salary = job.salary;
-//     // this.email = job.email;
-//     // this.phone = job.phone;
-//     // this.website = job.website;
