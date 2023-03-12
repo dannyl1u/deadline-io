@@ -36,7 +36,7 @@ function Dashboard(props) {
     const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/getJobs")
+    fetch("http://100.24.240.168:8000/getJobs")
       .then(function (response) {
         return response.json();
       })
