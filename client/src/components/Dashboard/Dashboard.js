@@ -8,14 +8,13 @@ function Dashboard(props) {
   const [value, onChange] = useState(new Date());
   const [jobs, setJobs] = useState([]);
 
-  fetch("/getJobs")
+  fetch("/api/jobs")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       console.log(data);
       setJobs(data);
-      console.log(data);
     })
     .catch(function (error) {});
 
