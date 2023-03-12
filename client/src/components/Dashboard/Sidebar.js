@@ -13,7 +13,7 @@ function Sidebar() {
       id: "sap",
       label: "SAP",
       value: false,
-      image: "../assets/images/amazon.png",
+      image: "sap.png",
     },
     { id: "mastercard", label: "Mastercard", value: false, image: "meta.png" },
     { id: "lululemon", label: "Lululemon", value: false, image: "apple.png" },
@@ -41,20 +41,20 @@ function Sidebar() {
     <div id="sidebar" className="sidebar">
       <div className="sidebar-box">
         <div className="text-center">
-          <h3>Top Employers</h3>
+          <h3 className="mt-3">Sponsors</h3>
         </div>
         <div className="sidebar-img">
           <div className="sidebar-row">
-            <div className="form-group">
+            <div className="sidebar-img">
               <img src={logo} alt="company-logo"  className="sidebar-img__image"/>
             </div>
-            <div className="form-group">
+            <div className="sidebar-img">
               <img src={logo1} alt="company-logo" className="sidebar-img__image"/>
             </div>
-            <div className="form-group">
+            <div className="sidebar-img">
               <img src={logo2} alt="company-logo" className="sidebar-img__image" />
             </div>
-            <div className="form-group">
+            <div className="sidebar-img">
               <img src={logo3} alt="company-logo" className="sidebar-img__image"/>
             </div>
           </div>
