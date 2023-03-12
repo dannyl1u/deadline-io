@@ -8,6 +8,8 @@
     max-width: 100%;
     background-color: $background;
     position: relative;
+    min-height: 100px;
+    max-height: 170px;
 
     &-container {
     flex-direction: column;
