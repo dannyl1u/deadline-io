@@ -16,11 +16,11 @@ With Deadline, you can prioritize your applications and ensure that you're stayi
 
 ## Screenshots
 
-![Home Page](./img.png "Home Page")
-
 ![](/img1.png)
 
 ![](/img2.png)
+
+![Home Page](./img.png "Home Page")
 
 
 ## Available Commands
