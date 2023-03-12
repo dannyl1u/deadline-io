@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/deadline-io/static/css/main.2fa9248f.css",
+    "main.js": "/deadline-io/static/js/main.481292cd.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/deadline-io/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/electronicarts.png": "/deadline-io/static/media/electronicarts.e24bd593de66119dae4f.png",
+    "static/media/lululemon.png": "/deadline-io/static/media/lululemon.997048a9cb961c494040.png",
+    "index.html": "/deadline-io/index.html",
+    "main.2fa9248f.css.map": "/deadline-io/static/css/main.2fa9248f.css.map",
+    "main.481292cd.js.map": "/deadline-io/static/js/main.481292cd.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/deadline-io/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fa9248f.css",
+    "static/js/main.481292cd.js"
+  ]
+}
