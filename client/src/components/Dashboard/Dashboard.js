@@ -30,10 +30,10 @@ function Dashboard(props) {
         <option value="meta">Meta</option>
         <option value="apple">Apple</option>
       </select> */}
-       <div className="dashboard">
+        <div className="dashboard">
       <Calendar onChange={onChange} value={value} 
-      className='react-calendar'/>
-      </div>
+        className='react-calendar'/>
+        </div>
       {Object.values(jobs).map((job) => (
         <div key={job.title}>
           <h3>{job.title}</h3>
