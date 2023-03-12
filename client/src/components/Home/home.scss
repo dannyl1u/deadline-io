@@ -1,0 +1,72 @@
+@import '../../styles/mixins';
+
+.home {
+    padding: 1.25rem 0;
+
+    @include desktop {
+    padding: 3rem 0;
+    }
+    &-title {
+        text-align: center;
+    
+        @include tablet {
+         padding: 1rem;
+        }
+    
+        @include desktop {
+        padding: 1.25rem 0;
+        }
+    }
+    &-text {
+        color: #000;
+        font-size: .8125rem; 
+        margin-top: 1rem;
+    
+            @include tablet {
+            margin-top: 0;
+            font-size: .875rem;
+            }
+    
+            @include desktop {
+            font-size: 1.125rem;
+            }
+    }
+    &-inner {
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+    }
+    &-intro {
+        display: flex;
+        justify-content: center;
+    }
+    &-info {
+        padding-top: 1rem;
+    
+            @include tablet {
+            padding-top: 0;
+            flex: 0 0 75%;
+            max-width: 100%;
+        }
+    }
+    &-text {
+        font-size: 14px;
+    
+            @include tablet {
+            font-size: 16px;
+            }
+    
+            @include desktop {
+            font-size: 18px;
+            }
+    
+    }
+    &-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    padding: 1.25rem;
+}
