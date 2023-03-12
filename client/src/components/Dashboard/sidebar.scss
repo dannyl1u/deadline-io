@@ -1,21 +1,26 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+
 .sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    width: 100%;
     padding: 0 1rem;
+    background-color: $backgroundLight;
 
     &-box {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
-        width: 100%;
-        padding: 0 1rem;
+        padding: 1rem;
     }
     &-img {
-        display: flex;
+        padding: 0 1rem;
+
+        @include tablet {
+        padding: 0 1rem;
+        }
 
         &__image {
         max-width: 100%;
@@ -24,11 +29,19 @@
     }
     &-row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding: 1rem;
         margin-bottom: 1rem;
+
+         @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 0;
+        }
    }
    &-list {
     list-style: none;
@@ -38,5 +51,4 @@
     }
    } 
 }
-
 
