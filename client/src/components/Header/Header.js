@@ -11,7 +11,7 @@ export default function Header() {
           <Navbar.Brand href="/" className="nav-container__box">
             <img
               className="nav-logo d-inline-block align-middle"
-              width="200"
+              width="80"
               alt="logo-img"
               src={logo}
             />
@@ -22,10 +22,10 @@ export default function Header() {
             data-bs-target="#navbarScroll"
             className="nav-bar"
           />
-          <Navbar.Collapse id="navbarScroll">
+          {/* <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto">
               <NavLink href="/" className="nav-bar">
-                Home
+                About
               </NavLink>
 
               <NavLink href="/dashboard" className="nav-bar">
@@ -33,7 +33,7 @@ export default function Header() {
               </NavLink>
       
             </Nav>
-          </Navbar.Collapse>
+          </Navbar.Collapse> */}
         </Container>
       </Navbar>
     </div>
