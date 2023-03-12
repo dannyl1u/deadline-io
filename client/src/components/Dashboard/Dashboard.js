@@ -43,43 +43,22 @@ function Dashboard(props) {
         return response.json();
       })
       .then(function (data) {
-<<<<<<< HEAD
-       
-=======
         console.log(data);
         for (const jobTitle in data) {
           jobPostings.push({title: jobTitle, start: new Date(data[jobTitle]), end: new Date(data[jobTitle])})
         }
->>>>>>> ccb1100dd211eacac14c5a8564eb75b8333053da
         setJobs(data);
         console.log(data);
       })
       .catch(function (error) {});
   }, []); // add an empty dependency array to ensure that the effect is only run once
-<<<<<<< HEAD
-
-  
-  return (
-    <div>
-      <label htmlFor="companies">Companies</label>
-=======
   
   return (  
     <div> 
->>>>>>> ccb1100dd211eacac14c5a8564eb75b8333053da
       <Sidebar />
       <Calendar localizer={localizer} events={jobPostings}
         startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
 
-<<<<<<< HEAD
-      {Object.values(jobs).map((job,index) => (
-        <div key={index.title}>
-          <h3>{index.title}</h3>
-          <p>{job.company}</p>
-        </div>
-      ))}
-=======
->>>>>>> ccb1100dd211eacac14c5a8564eb75b8333053da
     </div>
   )
 }
