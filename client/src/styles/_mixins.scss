@@ -1,0 +1,31 @@
+//media breakpoint for mobile
+@mixin mobile {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+}
+
+//media breakpoints for tablet */
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+}
+
+//media breakpoints for desktop 
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+    }
+}
+
+//media breakpoints for xldesktop 
+@mixin xldesktop {
+  @media screen and (min-width: 1880px) {
+    @content;
+    }
+}
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+$fontfamily: 'Montserrat', sans-serif;
