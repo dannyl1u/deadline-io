@@ -6,10 +6,10 @@ import startOfWeek from "date-fns/startOfWeek";
 import React, { useState, useEffect } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-big-calendar/lib/css/react-big-calendar.css"
 import Sidebar from "./Sidebar"
+import Search from "../Search/Search.js"
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -53,8 +53,13 @@ function Dashboard(props) {
   return (  
     <div> 
       {/* <Sidebar /> */}
-      <Calendar localizer={localizer} events={jobPostings}
-        startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
+      <Search></Search>
+      <Calendar 
+        localizer={localizer}
+        events={jobPostings}
+        startAccessor="start"
+        endAccessor="end"
+        style={{ height: 600, margin: "50px" }} />
     </div>
   )
 }
