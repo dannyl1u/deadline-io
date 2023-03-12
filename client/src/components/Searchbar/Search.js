@@ -19,7 +19,7 @@ function Search() {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"10px"}}>
             <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
-                <Chip label="Chip Filled" onClick={() => alert("test")} endDecorator={<LockOpenIcon fontSize="md"/>}>BCIT</Chip>
+                <Chip label="Chip Filled" endDecorator={<LockOpenIcon fontSize="md"/>}>BCIT</Chip>
                 <Chip label="Chip Outlined" endDecorator={<LockIcon fontSize="md"/>} style={{ opacity: "50%" }} >Mastercard</Chip>
                 <Chip label="Chip Outlined" endDecorator={<LockIcon fontSize="md"/>} style={{ opacity: "50%" }} >Lululemon</Chip>
                 <Chip label="Chip Outlined" endDecorator={<LockIcon fontSize="md"/>} style={{ opacity: "50%" }} >Electronic Arts</Chip>
