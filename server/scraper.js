@@ -12,7 +12,7 @@ let jobs_dict = {};
 // Cron job to scrape the website every 30 seconds
 
 const getJobs = async () => {
-	cron.schedule('*/30 * * * * *', async () => {
+	cron.schedule('*/5 * * * * *', async () => {
 		try {
 			console.log("inside cron job")
 			// sleep(2000); // wait for 2 seconds so we don't get blocked by website's firewall
