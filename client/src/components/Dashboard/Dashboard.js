@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import Sidebar from "./Sidebar";
+import 'react-calendar/dist/Calendar.css';
+import './dashboard.scss';
 
 function Dashboard(props) {
   const [value, onChange] = useState(new Date());
@@ -28,7 +30,14 @@ function Dashboard(props) {
         <option value="meta">Meta</option>
         <option value="apple">Apple</option>
       </select> */}
+<<<<<<< HEAD
       <Calendar onChange={onChange} value={value} />
+=======
+       <div className="dashboard">
+      <Calendar onChange={onChange} value={value} 
+      className='react-calendar'/>
+      </div>
+>>>>>>> main
       {Object.values(jobs).map((job) => (
         <div key={job.title}>
           <h3>{job.title}</h3>
@@ -40,3 +49,4 @@ function Dashboard(props) {
 }
 
 export default Dashboard;
+
