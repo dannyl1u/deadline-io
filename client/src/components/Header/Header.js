@@ -11,7 +11,7 @@ export default function Header() {
           <Navbar.Brand href="/" className="nav-container__box">
             <img
               className="nav-logo d-inline-block align-middle"
-              width="200"
+              width="80"
               alt="logo-img"
               src={logo}
             />
@@ -25,7 +25,7 @@ export default function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto">
               <NavLink href="/" className="nav-bar">
-                Home
+                About
               </NavLink>
 
               <NavLink href="/dashboard" className="nav-bar">
