@@ -29,6 +29,18 @@ app.get('/getJobs', async (req, res) => {
       }
 })
 
+// get jobs from vancity
+// app.get('/getJobs', async (req, res) => {
+//   try {
+//       const jobs_dict = await getJobs();
+//       res.json(jobs_dict);
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).send('Internal server error');
+//     }
+// })
+
+
 // use Routes
 app.use('/api/jobs', jobs);
 
