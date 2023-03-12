@@ -4,6 +4,7 @@ import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 
 import React, { useState, useEffect } from "react";
+
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import DatePicker from "react-datepicker";
@@ -31,6 +32,7 @@ const jobPostings = [
   },
 ];
 
+
 function Dashboard(props) {
     const [value, onChange] = useState(new Date());
     const [jobs, setJobs] = useState([]);
@@ -55,8 +57,10 @@ function Dashboard(props) {
       <Sidebar />
       <Calendar localizer={localizer} events={jobPostings}
         startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
+
     </div>
   )
 }
 
 export default Dashboard;
+
