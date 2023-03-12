@@ -19,7 +19,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.1",
+<<<<<<< HEAD
     "node-cron": "^3.0.2",
+=======
+>>>>>>> ccb1100dd211eacac14c5a8564eb75b8333053da
     "request": "^2.88.2",
     "validation": "^0.0.1"
   },
