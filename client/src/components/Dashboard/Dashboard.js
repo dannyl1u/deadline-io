@@ -14,12 +14,14 @@ function Dashboard(props) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
+       
         setJobs(data);
+        console.log(data);
       })
       .catch(function (error) {});
   }, []); // add an empty dependency array to ensure that the effect is only run once
 
+  
   return (
     <div>
       <label htmlFor="companies">Companies</label>
@@ -35,9 +37,9 @@ function Dashboard(props) {
       className='react-calendar'/>
       </div>
 
-      {Object.values(jobs).map((job) => (
-        <div key={job.title}>
-          <h3>{job.title}</h3>
+      {Object.values(jobs).map((job,index) => (
+        <div key={index.title}>
+          <h3>{index.title}</h3>
           <p>{job.company}</p>
         </div>
       ))}
