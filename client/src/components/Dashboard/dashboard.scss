@@ -10,6 +10,7 @@
     display: block;
     position: relative;
     width: 100%;
+    
     background-color: #3b3b3c;
     color: #ffffff;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -99,3 +100,11 @@
     color: #f2aa8c;
     color: white;
    }
+
+   .centered {
+    // height: 100vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
