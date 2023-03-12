@@ -14,7 +14,7 @@ function Search() {
 
     return (
     <div>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"30px", fontSize: "larger"}}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"30px", fontSize: "larger", 'font-weight':'bold'}}>
         Showing job application deadlines for:
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"10px"}}>
@@ -27,11 +27,14 @@ function Search() {
                 and more coming soon...
             </Box>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"10px"}}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"10px",'font-weight':'bold'}}>
             <LockIcon style={{color: "blue"}}></LockIcon>Unlock with PRO
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"40px", 'font-weight':'bold'}}>
-            ❗️ Application deadline ❗
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"50px"}}>
+            Legend:
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"5px", 'font-weight':'bold'}}>
+            ❗️ Application deadline
         </div>
       </div>
     );
