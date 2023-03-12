@@ -1,0 +1,130 @@
+@import "../../styles/mixins";
+
+.footer
+{
+  background-color: #fc4c02;
+  font-size:15px;
+  line-height:24px;
+  color: #ffffff;
+
+        @include tablet {
+        padding: 1rem;
+        }
+
+    &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  
+        @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 0;
+        }
+}
+
+    &-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  &-logo {
+    max-width: 50%;
+    height: auto;
+
+    @include tablet {
+    visibility: hidden;
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  
+    @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 0;
+    }
+  }
+  
+  &-box {
+      
+    @include tablet {
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+
+}
+.footer .social-icons a
+{
+  margin-right:0;
+  border-radius:100%;
+  background-color: #000;
+}
+.copyright-text
+{
+  margin:0;
+}
+
+@media (max-width:767px)
+{
+  .footer
+  {
+    padding-bottom:0;
+  }
+  .footer .footer-text,.footer .social-icons
+  {
+    text-align:center;
+    margin-top: 2rem;
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px;
+  margin-right:8px;
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  color: #d2d2d2;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:40px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear;
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color: #ffffff;
+  background-color: #d2d2d2;
+}
