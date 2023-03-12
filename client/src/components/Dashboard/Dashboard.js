@@ -52,7 +52,7 @@ function Dashboard(props) {
   
   return (  
     <div> 
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Calendar localizer={localizer} events={jobPostings}
         startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
     </div>
