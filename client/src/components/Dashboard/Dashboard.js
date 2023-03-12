@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import Sidebar from "./Sidebar";
 
@@ -6,15 +6,17 @@ function Dashboard(props) {
   const [value, onChange] = useState(new Date());
   const [jobs, setJobs] = useState([]);
 
-  fetch("/api/jobs")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      setJobs(data);
-    })
-    .catch(function (error) {});
+  useEffect(() => {
+    fetch("http://localhost:8000/getJobs")
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+        setJobs(data);
+      })
+      .catch(function (error) {});
+  }, []); // add an empty dependency array to ensure that the effect is only run once
 
   return (
     <div>
@@ -27,7 +29,7 @@ function Dashboard(props) {
         <option value="apple">Apple</option>
       </select> */}
       <Calendar onChange={onChange} value={value} />
-      {jobs.map((job) => (
+      {Object.values(jobs).map((job) => (
         <div key={job.title}>
           <h3>{job.title}</h3>
           <p>{job.company}</p>
