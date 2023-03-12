@@ -1,4 +1,4 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 @import '../../styles/variables';
 
 .nav {
@@ -8,8 +8,6 @@
     max-width: 100%;
     background-color: $background;
     position: relative;
-    min-height: 100px;
-    max-height: 170px;
 
     &-container {
     flex-direction: column;
@@ -17,18 +15,23 @@
 
     &-logo {
     max-width: 100%;
-    // max-height: 3.75rem;
     }
 
     &-bar {
-    color: $fontDark !important;
-    font-weight: 700;
-    font-size: 1.25rem;
+    color: $fontLight!important;
+    font-weight: 600;
+    font-size: 1rem;
 
         &:hover {
-        color: $fontLight !important;
+        color: $fontDark !important;
+        font-weight: bold;
         }
     }
+}
+
+#basic-nav-dropdown {
+    color: $black;
+    background-color: red;
 }
 
 .navbar-brand {
