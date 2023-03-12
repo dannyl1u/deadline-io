@@ -9,7 +9,7 @@ export default function footer() {
       <div className="footer-container">
         <div className="footer-row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="footer-text">Designed and Developed by Danny & Chantelle</p>
+            <p className="footer-text">© Danny & Chantelle 2023. All rights reserved.</p>
           </div>
           <div className="footer-image">
             <img src={logosmall} alt="logo" className="footer-logo" />

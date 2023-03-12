@@ -22,7 +22,7 @@ export default function Header() {
             data-bs-target="#navbarScroll"
             className="nav-bar"
           />
-          {/* <Navbar.Collapse id="navbarScroll">
+          <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto">
               <NavLink href="/" className="nav-bar">
                 About
@@ -33,7 +33,7 @@ export default function Header() {
               </NavLink>
       
             </Nav>
-          </Navbar.Collapse> */}
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </div>
