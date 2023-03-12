@@ -1,11 +1,12 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
 
-.footer
-{
-  background-color: #fc4c02;
+.footer {
+  background-color: $background;
   font-size:15px;
   line-height:24px;
-  color: #ffffff;
+  color: $fontLight;
+  font-weight: 600;
 
         @include tablet {
         padding: 1rem;
@@ -70,7 +71,7 @@
 {
   margin-right:0;
   border-radius:100%;
-  background-color: #000;
+  background-color: $black;
 }
 .copyright-text
 {
@@ -105,12 +106,12 @@
 {
   margin-right:15px;
   text-transform:uppercase;
-  color:#96a2b2;
+  color:$fontLight;
   font-weight:700;
   font-size:13px
 }
 .social-icons a{
-  color: #d2d2d2;
+  color: $fontLight;
   font-size:16px;
   display:inline-block;
   line-height:44px;
@@ -125,6 +126,6 @@
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color: #ffffff;
-  background-color: #d2d2d2;
+  color: $fontDark;
+  background-color: $fontLight;
 }
