@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./sidebar.scss";
-import logo from "../../assets/images/amazon.png";
-import logo1 from "../../assets/images/apple.png";
-import logo2 from "../../assets/images/google.png";
-import logo3 from "../../assets/images/vancouver.png";
+import logo from "../../assets/images/sap.png";
+import logo1 from "../../assets/images/electronicarts.png";
+import logo2 from "../../assets/images/lululemon.png";
+import logo3 from "../../assets/images/mastercard.png";
+import logo4 from "../../assets/images/bcit.png";
 
 function Sidebar() {
   const [filterText, setFilterText] = useState("");
