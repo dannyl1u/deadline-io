@@ -10,14 +10,14 @@ function Sidebar() {
   const [filterText, setFilterText] = useState("");
   const [companies, setCompanies] = useState([
     {
-      id: "amazon",
-      label: "Amazon",
+      id: "sap",
+      label: "SAP",
       value: false,
       image: "../assets/images/amazon.png",
     },
-    { id: "meta", label: "Meta", value: false, image: "meta.png" },
-    { id: "apple", label: "Apple", value: false, image: "apple.png" },
-    { id: "google", label: "Google", value: false, image: "google.png" },
+    { id: "mastercard", label: "Mastercard", value: false, image: "meta.png" },
+    { id: "lululemon", label: "Lululemon", value: false, image: "apple.png" },
+    { id: "electronicarts", label: "Electronic Arts", value: false, image: "google.png" },
   ]);
 
   const handleFilterChange = (event) => {
