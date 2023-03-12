@@ -8,7 +8,6 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-big-calendar/lib/css/react-big-calendar.css"
-import Sidebar from "./Sidebar"
 import Search from "../Searchbar/Search.js"
 
 const locales = {
@@ -52,7 +51,7 @@ function Dashboard(props) {
   
   return (  
     <div> 
-      {/* <Sidebar /> */}
+
       <Search></Search>
       <Calendar 
         localizer={localizer}
