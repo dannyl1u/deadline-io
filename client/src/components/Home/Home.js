@@ -30,15 +30,14 @@ function Home(props) {
             </p>
             <p className="home-text">
               Our web application is easy to use and allows you to keep all your
-              job applications in one place. Simply input the company name,
-              position, and deadline, and Deadline will do the rest. You'll
-              never miss an application deadline again.
+              job applications in one place. Deadline.io will keep track of all
+              job postings from your faviourite companies into an intutitve easy
+              to read calendar format. You'll never miss an application deadline
+              again. 
             </p>
             <p className="home-text">
               With Deadline, you can prioritize your applications and ensure
-              that you're staying on track with your job search. You can also
-              set reminders and receive notifications, so you never forget an
-              important deadline.
+              that you're staying on track with your job search.
             </p>
           </div>
         </div>
