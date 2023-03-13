@@ -8,8 +8,6 @@
     max-width: 100%;
     background-color: $background;
     position: relative;
-    min-height: 100px;
-    max-height: 170px;
 
     &-container {
     flex-direction: column;
@@ -17,23 +15,24 @@
 
     &-logo {
     max-width: 100%;
+    height: auto;
     }
 
     &-bar {
-    color: $fontLight!important;
+    color: $fontLight !important;
     font-weight: 600;
     font-size: 1rem;
 
         &:hover {
         color: $fontDark !important;
-        font-weight: bold;
+        font-weight: 600;
         }
     }
 }
 
 #basic-nav-dropdown {
     color: $black;
-    background-color: red;
+    background-color: $background;
 }
 
 .navbar-brand {
