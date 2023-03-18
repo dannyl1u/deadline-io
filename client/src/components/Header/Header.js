@@ -2,9 +2,12 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import "./header.scss";
 import { NavLink } from "react-bootstrap";
 import logo from "../../assets/logo/logo.png";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 export default function Header() {
   return (
+    
     <div className="nav">
       <Navbar collapseOnSelect expand="sm" variant="dark">
         <Container className="nav-container">

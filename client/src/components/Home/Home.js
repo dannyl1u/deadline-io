@@ -17,7 +17,7 @@ function Home(props) {
                   src={home}
                   alt="avatar"
                   className="rounded home-img img-fluid shadow-2-strong"
-                />
+                />  
               </div>
             </div>
           </div>
