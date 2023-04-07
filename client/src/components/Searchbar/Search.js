@@ -28,7 +28,7 @@ function Search() {
             </Box>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"10px",'font-weight':'bold'}}>
-            <LockIcon style={{color: "blue"}}></LockIcon>Unlock with PRO
+            <LockIcon style={{color: "blue"}}></LockIcon>Unlock with PRO (coming soon)
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop:"50px"}}>
             Legend:
